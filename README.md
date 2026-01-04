@@ -52,5 +52,5 @@ The platform is built using **Laravel** for the backend and **Blade** for the fr
 1. Ensure **PHP 8+**, **Composer**, and **Laravel 10+** are installed  
 2. Clone the repository:  
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/ZwGit0/fyp>
 cd WiseShopperAI
