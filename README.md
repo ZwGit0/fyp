@@ -1,64 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# WiseShopperAI
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
+WiseShopperAI is a web-based intelligent shopping platform developed as a Final Year Project (FYP). The system combines e-commerce functionality, personalized product recommendations, and an AI-powered chatbot to enhance the user shopping experience and improve decision-making.
 
-## About Laravel
+The platform is built using **Laravel** for the backend and **Blade** for the frontend, with **Filament Admin** used for administrative and management tasks. It integrates **Botpress Cloud** to provide conversational AI capabilities and supports role-based access for **Admins, Sellers, and Users**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Core Objectives
+- Provide a smart shopping platform with AI-assisted chatbot
+- Deliver personalized product recommendations based on user behavior  
+- Enable conversational shopping assistance via chatbot  
+- Support scalable product, category, and seller management  
+- Separate concerns between admin, seller, and customer roles  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Key Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 1. User Features
+- User registration and authentication  
+- Product browsing by category and type  
+- Add-to-cart and checkout workflow  
+- Delivery or pickup selection  
+- Address and payment method selection  
+- AI chatbot for product inquiries and shopping assistance  
+- Personalized product recommendations based on frequently added-to-cart items and frequently purchased items
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2. Seller Features
+- Dedicated seller login  
+- Seller dashboard (custom Laravel views)  
+- CRUD operations for seller-owned products only  
+- Restriction preventing sellers from modifying other sellers’ products  
 
-## Laravel Sponsors
+### 3. Admin Features (Filament Admin)
+- Admin authentication  
+- Full CRUD access to all products  
+- Category and product type management  
+- Chatbot intent and response management  
+- System-wide monitoring and management  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 4. AI & Recommendation System
+- Botpress Cloud integration for conversational AI  
+- Custom intents managed via Laravel and Filament  
+- Auto-sync of intents to Botpress NLU API  
+- Knowledge based learning for chatbot interaction
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Setup / Build Instructions
+1. Ensure **PHP 8+**, **Composer**, and **Laravel 10+** are installed  
+2. Clone the repository:  
+```bash
+git clone <your-repo-url>
+cd WiseShopperAI
