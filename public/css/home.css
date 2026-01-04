@@ -1,0 +1,157 @@
+
+.categories {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.categories button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 0.5px solid rgb(217, 214, 214);
+    cursor: pointer;
+}
+
+.hero {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;                   
+    max-width: 600px;             
+    margin: 0 auto;
+}
+
+.search-bar {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.search-bar input {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    width: 800px;
+    font-size: 16px;
+}
+
+.products {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-top: 2px solid lightgrey;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 120px;
+    max-height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-item p {
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+.product-item a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.search-dropdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    width: 800px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    text-align: left;
+}
+
+.search-item {
+    padding: 10px;
+    border-bottom: 1px solid #d4d2d2;
+}
+
+.search-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-item:hover {
+    background: #c1c1c1;
+}
+
+.no-results {
+    padding: 10px;
+    color: #888;
+}
+
+/* Chat Link Styles */
+.chat-link-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: -40px;
+    transition: color 0.3s ease;
+}
+
+.cart-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: -40px;
+    transition: color 0.3s ease;
+}
+
+.chat-link:hover {
+    color: #1e90ff;
+}
+
+.chat-link .material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.cart-link .material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+}

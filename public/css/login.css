@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.login-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-container form input:focus {
+    border-color: #007bff; 
+    outline: none;
+}
+
+.login-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5c3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.register {
+    margin-top: 20px;
+}
+
+.register hr {
+    margin-bottom: 10px;
+}
+
+.register-btn {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: #393b3a;
+}
+
+.error {
+    color: red;
+    font-size: 0.7em; 
+    margin-bottom: 15px; 
+    font-family: Arial, sans-serif; 
+    text-align: left;
+}
+
+.forgot-password {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.back-to-login {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.back-to-login a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-to-login a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.success {
+    background-color: #e7f3e7;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.reset-link-container {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.reset-link-container p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.reset-link-container a {
+    color: #ff5c3b;
+    text-decoration: none;
+    font-weight: 500;
+    word-break: break-all; /* Ensure long URLs wrap */
+    display: inline-block;
+    max-width: 100%; /* Prevent overflow */
+}
+
+.reset-link-container a:hover {
+    text-decoration: underline;
+}

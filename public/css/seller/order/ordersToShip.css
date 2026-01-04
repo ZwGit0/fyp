@@ -1,0 +1,178 @@
+.orders-to-ship-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #e6f0fa 0%, #f8fbfc 100%); /* Subtle blue gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for depth */
+}
+
+.orders-to-ship-container h2 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark blue-gray for a sophisticated look */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.orders-to-ship-container p {
+    font-size: 16px;
+    color: #7f8c8d; /* Softer gray for secondary text */
+    text-align: center;
+}
+
+.order-card {
+    border: 1px solid #ecf0f1; /* Lighter border for a cleaner look */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+.order-card:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.order-card h3 {
+    font-size: 22px;
+    color: #2980b9; /* Vibrant blue to match the theme */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.order-card h3::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #3498db; /* Blue underline for emphasis */
+    margin: 5px auto 0;
+}
+
+.order-card h4 {
+    font-size: 18px;
+    color: #2c3e50; /* Dark blue-gray for consistency */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    font-size: 16px;
+    color: #34495e; /* Darker text for readability */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.order-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the border-radius applies to the table */
+}
+
+.order-card th,
+.order-card td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #34495e; /* Darker shade for readability */
+    border-bottom: 1px solid #ecf0f1; /* Lighter border for a cleaner look */
+}
+
+.order-card th {
+    background-color: #3498db; /* Vibrant blue header to match other pages */
+    color: #fff; /* White text for contrast */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-card td {
+    background-color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Alternating row colors for better readability */
+.order-card tr:nth-child(even) td {
+    background-color: #f5f9fc; /* Very light blue for even rows */
+}
+
+.order-card tr:hover td {
+    background-color: #e8f4f8; /* Light hover effect with a subtle blue tint */
+}
+
+.order-card tr:last-child td {
+    border-bottom: none;
+}
+
+.order-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8fbfc; /* Slightly tinted background for distinction */
+    border-radius: 8px;
+    border: 1px solid #ecf0f1; /* Lighter border */
+    border-left: 5px solid #3498db; /* Blue accent on the left */
+    transition: transform 0.2s ease; /* Subtle animation on hover */
+}
+
+.order-summary:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.order-summary p {
+    font-size: 16px;
+    color: #34495e; /* Darker text for readability */
+    margin-bottom: 10px;
+}
+
+.order-summary p strong {
+    color: #2c3e50; /* Darker color for emphasis */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions for hover and click */
+}
+
+.btn:hover {
+    transform: translateY(-1px); /* Slight lift effect on hover */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Slight press effect on click */
+}
+
+.btn-primary {
+    background-color: #1abc9c; /* Teal for primary buttons (e.g., Mark as Shipped) */
+}
+
+.btn-primary:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+.alert-success {
+    background-color: #e8f5e9; /* Lighter green for success alerts */
+    color: #2e7d32; /* Dark green text */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-left: 5px solid #4caf50; /* Green accent on the left */
+}
+
+.btn-success:disabled {
+    background-color: #7eea87;
+    cursor: not-allowed;
+}

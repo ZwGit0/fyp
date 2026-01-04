@@ -1,0 +1,327 @@
+.cart-container {
+    display: flex;
+    justify-content: center; /* Centers the shopping bag */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Payment Form Styling */
+.payment-form {
+    width: 65%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title Styling */
+.payment-form h2{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards, typing 2s steps(30) 1s forwards; /* Typing effect with fadeIn */
+}
+
+.payment-form h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards, typing 2s steps(30) 1s forwards; /* Typing effect with fadeIn */
+}
+
+.payment-form h4 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards, typing 2s steps(30) 1s forwards; /* Typing effect with fadeIn */
+}
+
+/* Typing Effect for Headers */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s; /* Start form inputs after typing */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #2c3e50;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s; /* Label appears after the field */
+}
+
+/* Input Field Styling */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards;
+    animation-delay: 4s; /* Input appears slightly after label */
+}
+
+/* Subtle "Pop-Up" Effect when Focused */
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Slight shadow on focus */
+    transform: translateY(-2px); /* Slight upward movement */
+    transition: all 0.3s ease;
+}
+
+/* Payment Method Styling */
+.payment-method {
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s; /* Delayed appearance */
+}
+
+.payment-method label {
+    margin-right: 30px;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.payment-method input {
+    margin-right: 10px;
+}
+
+/* Card Details Section Styling */
+.card-details {
+    background-color: #f0f3f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.3s; /* Delay for card details to appear */
+}
+
+.card-details label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Input Field Styling */
+.card-details input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+/* Subtle "Pop-Up" Effect when Focused */
+.card-details input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Slight shadow on focus */
+    transform: translateY(-2px); /* Slight upward movement */
+    transition: all 0.3s ease;
+}
+
+/* Smooth Transition for Form Inputs */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends in normal position */
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .payment-form {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .order-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+/* Left Side: Cart Items */
+.cart-items {
+    width: 30%;  
+    background-color: #f0f0f0; /* Light gray background */
+    margin-right: auto; /* Prevents sticking to the right */
+    box-sizing: border-box; /* Ensures padding and borders are within the width */
+    overflow: hidden; /* Prevents any content from overflowing */
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #4c3d3d;
+}
+
+.order-details{
+    padding: 40px;
+}
+
+.cart-items table {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+.cart-items th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4c3d3d;
+}
+
+.cart-items td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #d1cdcd ;
+}
+
+.cart-items img {
+    width: 65px;  
+    height: auto;
+}
+
+.cart-items td:first-child img {
+    display: block;
+    margin: 0 auto;
+}
+
+.quantity {
+    width: 10px; 
+    text-align:center;
+    border: none; 
+    background: none; 
+    font-size: 18px;
+}
+
+/* Styling the rows containing the label and price */
+.price-row {
+    display: flex;
+    justify-content: space-between;  /* Places label on the left and price on the right */
+    margin: 10px 0;  /* Adds some space between rows */
+}
+
+.price {
+    display: inline; /* Ensures no space between the currency and the value */
+}
+
+.priceTotal {
+    margin-top: 10px;
+    display: inline; 
+    font-size: 1.5em; /* Adjust as needed */
+    font-weight: bold; /* Makes it stand out more */
+}
+
+.shipping {
+    margin-top: 60px;
+    font-size: 1.3em;
+}
+
+.cart-items hr {
+    margin-top: 50px; 
+    margin-bottom: 30px;
+}
+
+.cart-items p {
+    font-size: 1.3em; /* Larger size for the label (Total:) */
+    margin: 15px 0;
+}
+
+.order-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px auto; /* Centering the button horizontally */
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Target only the "Total:" label */
+.cart-items p strong.total-label {
+    margin-top: 10px;
+    font-size: 1.5em; /* Larger size for the label (Total:) */
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}

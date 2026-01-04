@@ -1,0 +1,251 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    background: linear-gradient(135deg, rgba(58, 123, 213, 0.8), rgba(95, 155, 241, 0.8));
+    background-size: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 40px 20px;
+}
+
+/* Styling for the welcome message */
+h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    white-space: normal;
+    width: 0;
+    animation: typing 3s ease-in-out 2s forwards, blink-caret 0.5s step-end infinite;
+}
+
+/* Dashboard Overview Section */
+.dashboard-overview {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s forwards 1s;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.dashboard-overview h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.overview-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.stat-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat-box strong {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.stat-box .revenue-display {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Dashboard Charts Section */
+.dashboard-charts {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s forwards 1.2s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.chart-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.chart-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.chart-container h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-chart-wrapper {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.pie-chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pie-chart-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.pie-chart-legend .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Products Sold Table Section */
+.products-sold-table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s forwards 1.4s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-sold-table h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.products-sold-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-sold-table th,
+.products-sold-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.products-sold-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.products-sold-table td {
+    background-color: #fff;
+}
+
+.products-sold-table tr:last-child td {
+    border-bottom: none;
+}
+
+.products-sold-table p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.deleted-product {
+    color: #999;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

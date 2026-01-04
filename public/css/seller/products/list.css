@@ -1,0 +1,254 @@
+body{
+    background: linear-gradient(to right, #c4c2be, #bebeb6); /* Background gradient */
+
+}
+
+/* Main container */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative; /* For absolute positioning of the buttons */
+}
+
+/* Header */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeInHeader 1s ease-out; /* Animation for header */
+}
+
+/* Fade-in Animation for Header */
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Product List - Make it scrollable */
+.product-list {
+    max-height: 800px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: auto;
+    margin-bottom: 80px; /* Space for the buttons at the bottom */
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #5D9CEC;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3A8BBE;
+}
+
+.btn-secondary {
+    background-color: #A0A0A0;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7A7A7A;
+}
+
+.btn-sm {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* Product Table Styles */
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    animation: fadeInTable 1s forwards;
+}
+
+/* Fade-in Animation for Table */
+@keyframes fadeInTable {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    border-right: 2px solid #ddd; 
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 4px solid #bd4444;
+}
+
+td {
+    background-color: #fff;
+}
+
+td img {
+    border-radius: 8px;
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+td img:hover {
+    transform: scale(1.1); /* Zoom in on product image */
+    transition: transform 0.3s ease;
+}
+
+/* Product Details */
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.product-type {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.product-stock {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+ul li strong {
+    color: #333;
+}
+
+.fixed-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    gap: 15px; /* Add some space between buttons */
+}
+
+.fixed-buttons .btn {
+    width: 150px; /* Make buttons uniform in width */
+    animation: fadeInButton 1s forwards; /* Fade-in for buttons */
+}
+
+/* Fade-in Animation for Buttons */
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Empty Products */
+.text-muted {
+    text-align: center;
+    color: #850a0a;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typing 3s forwards, blink 0.75s step-end infinite;
+}
+
+.fixed-buttons-empty {
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%); 
+    gap: 15px; /* Add some space between buttons */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .fixed-buttons .btn {
+        width: 120px; /* Slightly smaller buttons on smaller screens */
+    }
+}

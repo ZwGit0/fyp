@@ -1,0 +1,319 @@
+.cart-container {
+    display: flex;
+    justify-content: center; /* Centers the shopping bag */
+    margin-top: 70px;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shopping-bag-header {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 65px; 
+}
+
+/* Left Side: Cart Items */
+.cart-items {
+    width: 60%;  
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: auto; /* Prevents sticking to the right */
+    box-sizing: border-box; /* Ensures padding and borders are within the width */
+    overflow: hidden; /* Prevents any content from overflowing */
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-items th, .cart-items td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart-items img {
+    width: 120px;  
+    height: auto;
+}
+
+.quantity {
+    width: 30px; 
+    text-align:center;
+}
+
+/* Right Side: Checkout Details */
+.checkout-details {
+    width: 30%;  /* Reduce width slightly */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    margin-right: auto; /* Prevents sticking to the right */
+}
+
+/* Styling the rows containing the label and price */
+.price-row {
+    display: flex;
+    justify-content: space-between;  /* Places label on the left and price on the right */
+    margin: 10px 0;  /* Adds some space between rows */
+}
+
+.price {
+    display: inline; /* Ensures no space between the currency and the value */
+}
+
+.priceTotal {
+    margin-top: 10px;
+    display: inline; 
+    font-size: 1.5em; /* Adjust as needed */
+    font-weight: bold; /* Makes it stand out more */
+}
+
+.checkout-details hr {
+    margin: 30px 0; /* Adjusts the space before and after the line */
+    border-top: 1px solid #ddd; /* Creates a light gray line */
+}
+
+.checkout-details h2 {
+    font-size: 1.7em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.checkout-details p {
+    font-size: 1.3em; /* Larger size for the label (Total:) */
+    margin: 15px 0;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px auto; /* Centering the button horizontally */
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Target only the "Total:" label */
+.checkout-details p strong.total-label {
+    margin-top: 10px;
+    font-size: 1.5em; /* Larger size for the label (Total:) */
+    font-weight: bold;
+}
+
+.decrease, .increase {
+    padding: 2px;   /* Optional: Keep some padding for spacing */
+    cursor: pointer;     /* Shows a pointer on hover */
+    border: none;         /* Removes the border */
+    background: none;     /* Removes background */
+    outline: none;        /* Removes the outline on focus */
+    cursor: pointer;
+    display: inline-block; /* Ensures both buttons align inline */
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Custom margin for Payment Methods */
+.payment-methods p {
+    margin: 0; /* Remove default margin */
+}
+
+.payment-methods {
+    margin-top: 25px;
+}
+
+.payment-methods i {
+    color: #007bff; /* Color for the card icon */
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.payment-methods .payment-note {
+    margin-bottom: 20px; /* Adds margin below the "We accept" line */
+}
+
+.payment-methods p:not(.payment-note) {
+    margin-bottom: 90px; /* Adds margin to the rest of the text in payment methods */
+}
+
+.other-info p {
+    margin-top: 60px; /* Adds space above the information */
+}
+
+/* Empty Cart Message Styles */
+.empty-cart-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;  /* Red color */
+    text-align: center; /* Center the message */
+    opacity: 0;  /* Start with invisible */
+    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+    margin-top: 50px; /* Add some space above the message */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+.search-cart-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+}
+
+.search-cart{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    margin-right: 40px; 
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.search-bar {
+    position: relative;
+    margin-top: -6px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 8px 35px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 20px;
+    left: 8px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #222222;
+}
+
+
+.search-dropdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    width: 250px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.search-item {
+    padding: 10px;
+    border-bottom: 1px solid #d4d2d2;
+}
+
+.search-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-item:hover {
+    background: #c1c1c1;
+}
+
+.no-results {
+    padding: 10px;
+    color: #888;
+}
+
+/* Recommended Products Section */
+.recommended-products {
+    flex: 1; /* Ensures the recommended products section takes up space alongside product info */
+    margin-top: 30px;
+    text-align: center; /* Centers the content */
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex; /* Use flexbox to center the grid */
+    justify-content: center; /* Horizontally centers the grid */
+}
+
+.recommended-line {
+    border-top: 2px solid #ccc; /* Grey color with 2px thickness */
+    margin-top: 100px; /* Add space above and below the line */
+    margin-bottom: 60px; 
+}
+
+.recommended-heading {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+}
+
+.recommended-products-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 100px;
+    justify-items: center; /* Center items within grid cells */
+    width: 100%; /* Ensure the grid takes up full available width */
+    max-width: 1500px; /* Optional: Limit the maximum width of the grid */
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Recommended Product Cards */
+.recommended-product-card {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px; /* Optional: Limit max card width */
+}
+
+.recommended-product-card img {
+    width: 100%;
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Ensure image covers the space without distortion */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.recommended-product-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.recommended-product-card .product-price {
+    font-size: 1.1rem;
+    color: #333;
+}

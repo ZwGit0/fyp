@@ -1,0 +1,132 @@
+/* Global Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7c6b5, #ff9a8b); /* Background gradient */
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* Register Container */
+.register-container {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+.register-container h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Description Text */
+.register-container p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Form Layout */
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add consistent space between input fields */
+    margin-bottom: 20px;
+    width: 100%; /* Ensures the form takes full width */
+}
+
+.register-container form input {
+    width: 100%;
+    padding: 18px; /* Increased padding for better appearance */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    height: 40px; /* Set consistent height for all input fields */
+}
+
+/* Focused Input */
+.register-container form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Adding glow effect */
+    transform: scale(1.02); /* Slightly scale up the input */
+}
+
+/* Submit Button */
+.register-container form button {
+    width: 100%;
+    padding: 12px; /* Increased padding for button */
+    background-color: #ff5c3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.register-container form button:hover {
+    background-color: #e94c28;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link p {
+    font-size: 0.9em;
+}
+
+.login-link a {
+    color: #ff5c3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+

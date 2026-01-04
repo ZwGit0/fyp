@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 20px;
+    border-bottom: 2px solid #2f2f2f;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+}
+
+header .logo h1 a {
+    text-decoration: none;   
+    color: inherit;         
+    font-weight: bold;  
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.guest-links {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 2em; 
+    margin-right: 2em;  
+    margin-bottom: -2.5em;
+}
+
+.guest-links nav {
+    margin-top: 0.5em;
+}
+
+.guest-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em; 
+}
+
+.guest-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.auth-links ul {
+    list-style: none;
+}
+
+.auth-links li a {
+    display: inline-flex; 
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.auth-links a .material-icons.logout-icon {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.profile-link {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.order{
+    padding-right: 18px;
+}
+
